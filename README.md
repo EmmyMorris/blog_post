@@ -44,13 +44,18 @@ Response status code: 200
 
 
 - GET /api/posts
-> Get forcast for location
+> Get posts for a given tag
+
 > PATH PARAMETERS- :tags(string)- REQUIRED
-  > example fields- science and tech
+  
+  example fields- science and tech
 > PATH PARAMETERS- :sortBy(string)- OPTIONAL
-  > valid fields- id(default), reads, likes, and popularity
+
+  valid fields- id(default), reads, likes, and popularity
+
 > PATH PARAMETERS- :direction(string)- OPTIONAL
-  > valid fields- desc and asc(default)
+
+ valid fields- desc and asc(default)
 
 > Example request:
 ```rb
