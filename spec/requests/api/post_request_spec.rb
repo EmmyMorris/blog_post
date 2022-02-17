@@ -5,7 +5,7 @@ RSpec.describe "Post API" do
   context 'happy paths' do
     it 'Sends posts in tag field, and post attributes', :vcr do
 
-      get "/api/posts?tags=tech&sortBy=popularity&direction=asc"
+      get "/api/posts?tag=tech&sortBy=popularity&direction=asc"
 
       body = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_successful
@@ -33,7 +33,7 @@ RSpec.describe "Post API" do
 
       xit 'Invalid sory by', :vcr do
 
-        get "/api/posts?tags=tech&sortBy=popularity&direction=hi"
+        get "/api/posts?tag=tech&sortBy=popularity&direction=hi"
 
         body = JSON.parse(response.body, symbolize_names: true)
         # require "pry"; binding.pry
