@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.hatchways.io/assessment/blog/posts?direction=asc&sortBy=popularity&tag=tech
+    uri: https://api.hatchways.io/assessment/blog/posts?direction=asc&sortBy=hi&tag=tech
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Cloud-Trace-Context:
-      - 56dcbcfc3a64e175149d6b0c5c64dda4
+      - cc203dddd6075ddd42c12b0ccc97d059
       Date:
       - Thu, 17 Feb 2022 21:16:20 GMT
       Server:

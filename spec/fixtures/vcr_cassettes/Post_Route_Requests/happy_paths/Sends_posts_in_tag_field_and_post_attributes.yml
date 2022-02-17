@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.hatchways.io/assessment/blog/posts?direction=hi&sortBy=&tag=tech
+    uri: https://api.hatchways.io/assessment/blog/posts?direction=asc&sortBy=popularity&tag=tech
     body:
       encoding: US-ASCII
       string: ''
@@ -25,9 +25,9 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Cloud-Trace-Context:
-      - 9dc6f9c9697f9097e2516437de92cdc9
+      - 2194c391925c022cb3bea61de6019a76
       Date:
-      - Thu, 17 Feb 2022 19:57:00 GMT
+      - Thu, 17 Feb 2022 21:35:19 GMT
       Server:
       - Google Frontend
       Cache-Control:
@@ -66,5 +66,5 @@ http_interactions:
         Roberson","authorId":2,"id":99,"likes":473,"popularity":0.34,"reads":97868,"tags":["culture","startups","tech"]}]}
 
 '
-  recorded_at: Thu, 17 Feb 2022 19:57:00 GMT
+  recorded_at: Thu, 17 Feb 2022 21:35:19 GMT
 recorded_with: VCR 6.0.0
