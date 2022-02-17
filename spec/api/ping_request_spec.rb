@@ -10,9 +10,9 @@ RSpec.describe "Ping API" do
       body = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to be_successful
-
-      expect(body[:data]).to have_key(:success)
-      expect(body[:data][:success]).to be(True)
+      expect(response.status).to be(200)
+      expect(body).to have_key(:success)
+      expect(body[:success]).to eq("true")
     end
   end
 end
