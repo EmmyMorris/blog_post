@@ -23,6 +23,10 @@ API Consumption
 Run `bundle exec rspec` to run the test suite
 
 ## End Points
+**Port**
+ - Start your server by running `rails s`
+ - On your browser go to the port `localhost:3000`
+
 **Posts**
 - GET /api/ping
 > Get a sucessful response
@@ -47,7 +51,7 @@ Response status code: 200
 > Get posts for a given tag
 
 > PATH PARAMETERS- :tags(string)- REQUIRED
-  
+
   example fields- science and tech
 > PATH PARAMETERS- :sortBy(string)- OPTIONAL
 
