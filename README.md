@@ -1,7 +1,7 @@
-# Blog Post
+# Blog Post API
 ## About
 Project Description
-
+A JSON API with two end points! One to test the application and the other to view posts. You can sort posts by tags, sort by, and direction!
 
 ## Initial Setup
 1. Fork and Clone the repo
@@ -12,10 +12,8 @@ Project Description
 ## Important Gems
 Testing
 * [rspec-rails](https://github.com/rspec/rspec-rails)
-* [capybara](https://github.com/teamcapybara/capybara)
 * [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
 * [simplecov](https://github.com/simplecov-ruby/simplecov)
-* [webmock](https://github.com/bblimke/webmock)
 * [vcr](https://github.com/vcr/vcr)
 
 API Consumption
@@ -27,8 +25,7 @@ Run `bundle exec rspec` to run the test suite
 ## End Points
 **Posts**
 - GET /api/ping
-> Get forcast for location
-> PATH PARAMETERS- :location(string)- REQUIRED
+> Get a sucessful response
 
 > Example request:
 ```rb
@@ -49,9 +46,18 @@ Response status code: 200
 - GET /api/posts
 > Get forcast for location
 > PATH PARAMETERS- :tags(string)- REQUIRED
+  > example fields- science and tech
 > PATH PARAMETERS- :sortBy(string)- OPTIONAL
+  > valid fields- id(default), reads, likes, and popularity
 > PATH PARAMETERS- :direction(string)- OPTIONAL
+  > valid fields- desc and asc(default)
 
+> Example request:
+```rb
+GET /api/posts?tags=tech&sortBy=popularity&direction=asc
+Content-Type: application/json
+Accept: application/json
+```
 Response body (JSON):
 ```rb
 {
